@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8061524127CFACAB00189914 /* EmailCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8061524027CFACAB00189914 /* EmailCardView.swift */; };
+		8061524327CFACD400189914 /* NameCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8061524227CFACD400189914 /* NameCardViewController.swift */; };
 		E9B7FAB227C5547300AA35FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B7FAB127C5547300AA35FE /* AppDelegate.swift */; };
 		E9B7FAB427C5547300AA35FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B7FAB327C5547300AA35FE /* SceneDelegate.swift */; };
 		E9B7FAB627C5547300AA35FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B7FAB527C5547300AA35FE /* ViewController.swift */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8061524027CFACAB00189914 /* EmailCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCardView.swift; sourceTree = "<group>"; };
+		8061524227CFACD400189914 /* NameCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCardViewController.swift; sourceTree = "<group>"; };
 		E9B7FAAE27C5547300AA35FE /* ClassWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B7FAB127C5547300AA35FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9B7FAB327C5547300AA35FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				E9B7FABA27C5547500AA35FE /* Assets.xcassets */,
 				E9B7FABC27C5547500AA35FE /* LaunchScreen.storyboard */,
 				E9B7FABF27C5547500AA35FE /* Info.plist */,
+				8061524227CFACD400189914 /* NameCardViewController.swift */,
+				8061524027CFACAB00189914 /* EmailCardView.swift */,
 			);
 			path = ClassWork;
 			sourceTree = "<group>";
@@ -134,9 +140,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8061524127CFACAB00189914 /* EmailCardView.swift in Sources */,
 				E9B7FAB627C5547300AA35FE /* ViewController.swift in Sources */,
 				E9B7FAB227C5547300AA35FE /* AppDelegate.swift in Sources */,
 				E9B7FAB427C5547300AA35FE /* SceneDelegate.swift in Sources */,
+				8061524327CFACD400189914 /* NameCardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
