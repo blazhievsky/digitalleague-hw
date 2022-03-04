@@ -71,12 +71,28 @@
 				80A37E1B27D27667002E28D9 /* Assets.xcassets */,
 				80A37E1D27D27667002E28D9 /* LaunchScreen.storyboard */,
 				80A37E2027D27667002E28D9 /* Info.plist */,
+				80A37E3227D27ABC002E28D9 /* NameVC */,
+				80A37E3327D27AD1002E28D9 /* EmailVC */,
+			);
+			path = CardNameAndEmail;
+			sourceTree = "<group>";
+		};
+		80A37E3227D27ABC002E28D9 /* NameVC */ = {
+			isa = PBXGroup;
+			children = (
 				80A37E2827D2770D002E28D9 /* NameCardViewController.swift */,
 				80A37E2A27D27720002E28D9 /* NameCardView.swift */,
+			);
+			path = NameVC;
+			sourceTree = "<group>";
+		};
+		80A37E3327D27AD1002E28D9 /* EmailVC */ = {
+			isa = PBXGroup;
+			children = (
 				80A37E2C27D2772C002E28D9 /* EmailCardViewController.swift */,
 				80A37E2E27D2773F002E28D9 /* EmailCardView.swift */,
 			);
-			path = CardNameAndEmail;
+			path = EmailVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

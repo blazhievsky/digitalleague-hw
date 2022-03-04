@@ -12,23 +12,29 @@ class NameCardView: UIView  {
     
     private lazy var nameCardView: UIView = {
         let view = UIView()
-        view.backgroundColor = .secondarySystemBackground
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.layer.cornerRadius = 12
+        view.backgroundColor = .secondarySystemBackground
+        view.layer.cornerRadius = 20
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOffset = CGSize(width: 4, height: 4)
+        view.layer.shadowOpacity = 0.7
+        view.layer.shadowRadius = 4
+        view.layer.cornerRadius = 20
         return view
     } ()
     
     private lazy var nameTextField: UITextField = {
         let textField = UITextField()
+        textField.translatesAutoresizingMaskIntoConstraints = false
         textField.placeholder = "введите имя..."
         textField.borderStyle = .roundedRect
         textField.backgroundColor = .systemBackground
-        textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
     
     private lazy var nameValidateButton: UIButton = {
         let button = UIButton(type: .system)
+        button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Валидировать имя", for: .normal)
         button.setTitle("Не дави на меня!", for: .highlighted)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .bold)
@@ -37,14 +43,13 @@ class NameCardView: UIView  {
         button.layer.cornerRadius = 4
         //        button.addTarget(self,
         //                         action: #selector(nameDidTapValidateButton), for: .touchUpInside)
-        button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     
     private lazy var nameValidationResultLabel: UILabel = {
         let label = UILabel()
-        label.text = "Ожидаю валидации"
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Ожидаю валидации"
         return label
     }()
 }
@@ -52,7 +57,7 @@ class NameCardView: UIView  {
 
 extension NameCardView {
     func configureView() {
-        self.backgroundColor = .secondarySystemBackground
+        self.backgroundColor = .tertiarySystemBackground
         
         self.addSubview(nameCardView)
         nameCardView.addSubview(nameTextField)
@@ -60,26 +65,22 @@ extension NameCardView {
         nameCardView.addSubview(nameValidationResultLabel)
         
         NSLayoutConstraint.activate([
-            nameCardView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 20),
-            nameCardView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 20),
-            nameCardView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20)
+            nameCardView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 50),
+            nameCardView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
+            nameCardView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
             
-            //            nameCardView.topAnchor.constraint(equalTo: authorHomeWorkLabel.topAnchor, constant: 50),
-            //            nameCardView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            //            nameCardView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-            //
-            //            nameTextField.topAnchor.constraint(equalTo: nameCardView.topAnchor, constant: 16),
-            //            nameTextField.leadingAnchor.constraint(equalTo: nameCardView.leadingAnchor, constant: 16),
-            //            nameTextField.trailingAnchor.constraint(equalTo: nameCardView.trailingAnchor, constant: -16),
-            //
-            //            nameValidateButton.topAnchor.constraint(equalTo: nameTextField.bottomAnchor, constant: 16),
-            //            nameValidateButton.leadingAnchor.constraint(equalTo: nameCardView.leadingAnchor, constant: 16),
-            //            nameValidateButton.trailingAnchor.constraint(equalTo: nameCardView.trailingAnchor, constant: -16),
-            //
-            //            nameValidationResultLabel.topAnchor.constraint(equalTo: nameValidateButton.bottomAnchor, constant: 16),
-            //            nameValidationResultLabel.leadingAnchor.constraint(equalTo: nameCardView.leadingAnchor, constant: 16),
-            //            nameValidationResultLabel.trailingAnchor.constraint(equalTo: nameCardView.trailingAnchor, constant: -16),
-            //            nameValidationResultLabel.bottomAnchor.constraint(equalTo: nameCardView.bottomAnchor, constant: -16),
+            nameTextField.topAnchor.constraint(equalTo: nameCardView.topAnchor, constant: 16),
+            nameTextField.leadingAnchor.constraint(equalTo: nameCardView.leadingAnchor, constant: 16),
+            nameTextField.trailingAnchor.constraint(equalTo: nameCardView.trailingAnchor, constant: -16),
+            
+            nameValidateButton.topAnchor.constraint(equalTo: nameTextField.bottomAnchor, constant: 16),
+            nameValidateButton.leadingAnchor.constraint(equalTo: nameCardView.leadingAnchor, constant: 16),
+            nameValidateButton.trailingAnchor.constraint(equalTo: nameCardView.trailingAnchor, constant: -16),
+            
+            nameValidationResultLabel.topAnchor.constraint(equalTo: nameValidateButton.bottomAnchor, constant: 16),
+            nameValidationResultLabel.leadingAnchor.constraint(equalTo: nameCardView.leadingAnchor, constant: 16),
+            nameValidationResultLabel.trailingAnchor.constraint(equalTo: nameCardView.trailingAnchor, constant: -16),
+            nameValidationResultLabel.bottomAnchor.constraint(equalTo: nameCardView.bottomAnchor, constant: -16),
         ])
         
         
