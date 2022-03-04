@@ -7,29 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8061524127CFACAB00189914 /* EmailCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8061524027CFACAB00189914 /* EmailCardView.swift */; };
-		8061524327CFACD400189914 /* NameCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8061524227CFACD400189914 /* NameCardViewController.swift */; };
-		E9B7FAB227C5547300AA35FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B7FAB127C5547300AA35FE /* AppDelegate.swift */; };
-		E9B7FAB427C5547300AA35FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B7FAB327C5547300AA35FE /* SceneDelegate.swift */; };
-		E9B7FAB627C5547300AA35FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B7FAB527C5547300AA35FE /* ViewController.swift */; };
-		E9B7FABB27C5547500AA35FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9B7FABA27C5547500AA35FE /* Assets.xcassets */; };
-		E9B7FABE27C5547500AA35FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B7FABC27C5547500AA35FE /* LaunchScreen.storyboard */; };
+		80A37E1327D27667002E28D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A37E1227D27667002E28D9 /* AppDelegate.swift */; };
+		80A37E1527D27667002E28D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A37E1427D27667002E28D9 /* SceneDelegate.swift */; };
+		80A37E1727D27667002E28D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A37E1627D27667002E28D9 /* ViewController.swift */; };
+		80A37E1C27D27667002E28D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A37E1B27D27667002E28D9 /* Assets.xcassets */; };
+		80A37E1F27D27667002E28D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A37E1D27D27667002E28D9 /* LaunchScreen.storyboard */; };
+		80A37E2727D276E5002E28D9 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A37E2627D276E5002E28D9 /* Validation.swift */; };
+		80A37E2927D2770D002E28D9 /* NameCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A37E2827D2770D002E28D9 /* NameCardViewController.swift */; };
+		80A37E2B27D27720002E28D9 /* NameCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A37E2A27D27720002E28D9 /* NameCardView.swift */; };
+		80A37E2D27D2772C002E28D9 /* EmailCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A37E2C27D2772C002E28D9 /* EmailCardViewController.swift */; };
+		80A37E2F27D2773F002E28D9 /* EmailCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A37E2E27D2773F002E28D9 /* EmailCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8061524027CFACAB00189914 /* EmailCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCardView.swift; sourceTree = "<group>"; };
-		8061524227CFACD400189914 /* NameCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCardViewController.swift; sourceTree = "<group>"; };
-		E9B7FAAE27C5547300AA35FE /* ClassWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9B7FAB127C5547300AA35FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E9B7FAB327C5547300AA35FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E9B7FAB527C5547300AA35FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E9B7FABA27C5547500AA35FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E9B7FABD27C5547500AA35FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E9B7FABF27C5547500AA35FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A37E0F27D27667002E28D9 /* CardNameAndEmail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardNameAndEmail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A37E1227D27667002E28D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80A37E1427D27667002E28D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		80A37E1627D27667002E28D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80A37E1B27D27667002E28D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80A37E1E27D27667002E28D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80A37E2027D27667002E28D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A37E2627D276E5002E28D9 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		80A37E2827D2770D002E28D9 /* NameCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCardViewController.swift; sourceTree = "<group>"; };
+		80A37E2A27D27720002E28D9 /* NameCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCardView.swift; sourceTree = "<group>"; };
+		80A37E2C27D2772C002E28D9 /* EmailCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCardViewController.swift; sourceTree = "<group>"; };
+		80A37E2E27D2773F002E28D9 /* EmailCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E9B7FAAB27C5547300AA35FE /* Frameworks */ = {
+		80A37E0C27D27667002E28D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,73 +45,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E9B7FAA527C5547300AA35FE = {
+		80A37E0627D27667002E28D9 = {
 			isa = PBXGroup;
 			children = (
-				E9B7FAB027C5547300AA35FE /* ClassWork */,
-				E9B7FAAF27C5547300AA35FE /* Products */,
+				80A37E1127D27667002E28D9 /* CardNameAndEmail */,
+				80A37E1027D27667002E28D9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E9B7FAAF27C5547300AA35FE /* Products */ = {
+		80A37E1027D27667002E28D9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E9B7FAAE27C5547300AA35FE /* ClassWork.app */,
+				80A37E0F27D27667002E28D9 /* CardNameAndEmail.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E9B7FAB027C5547300AA35FE /* ClassWork */ = {
+		80A37E1127D27667002E28D9 /* CardNameAndEmail */ = {
 			isa = PBXGroup;
 			children = (
-				E9B7FAB127C5547300AA35FE /* AppDelegate.swift */,
-				E9B7FAB327C5547300AA35FE /* SceneDelegate.swift */,
-				E9B7FAB527C5547300AA35FE /* ViewController.swift */,
-				E9B7FABA27C5547500AA35FE /* Assets.xcassets */,
-				E9B7FABC27C5547500AA35FE /* LaunchScreen.storyboard */,
-				E9B7FABF27C5547500AA35FE /* Info.plist */,
-				8061524227CFACD400189914 /* NameCardViewController.swift */,
-				8061524027CFACAB00189914 /* EmailCardView.swift */,
+				80A37E2627D276E5002E28D9 /* Validation.swift */,
+				80A37E1227D27667002E28D9 /* AppDelegate.swift */,
+				80A37E1427D27667002E28D9 /* SceneDelegate.swift */,
+				80A37E1627D27667002E28D9 /* ViewController.swift */,
+				80A37E1B27D27667002E28D9 /* Assets.xcassets */,
+				80A37E1D27D27667002E28D9 /* LaunchScreen.storyboard */,
+				80A37E2027D27667002E28D9 /* Info.plist */,
+				80A37E2827D2770D002E28D9 /* NameCardViewController.swift */,
+				80A37E2A27D27720002E28D9 /* NameCardView.swift */,
+				80A37E2C27D2772C002E28D9 /* EmailCardViewController.swift */,
+				80A37E2E27D2773F002E28D9 /* EmailCardView.swift */,
 			);
-			path = ClassWork;
+			path = CardNameAndEmail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E9B7FAAD27C5547300AA35FE /* ClassWork */ = {
+		80A37E0E27D27667002E28D9 /* CardNameAndEmail */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9B7FAC227C5547500AA35FE /* Build configuration list for PBXNativeTarget "ClassWork" */;
+			buildConfigurationList = 80A37E2327D27667002E28D9 /* Build configuration list for PBXNativeTarget "CardNameAndEmail" */;
 			buildPhases = (
-				E9B7FAAA27C5547300AA35FE /* Sources */,
-				E9B7FAAB27C5547300AA35FE /* Frameworks */,
-				E9B7FAAC27C5547300AA35FE /* Resources */,
+				80A37E0B27D27667002E28D9 /* Sources */,
+				80A37E0C27D27667002E28D9 /* Frameworks */,
+				80A37E0D27D27667002E28D9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ClassWork;
-			productName = ClassWork;
-			productReference = E9B7FAAE27C5547300AA35FE /* ClassWork.app */;
+			name = CardNameAndEmail;
+			productName = CardNameAndEmail;
+			productReference = 80A37E0F27D27667002E28D9 /* CardNameAndEmail.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E9B7FAA627C5547300AA35FE /* Project object */ = {
+		80A37E0727D27667002E28D9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					E9B7FAAD27C5547300AA35FE = {
+					80A37E0E27D27667002E28D9 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = E9B7FAA927C5547300AA35FE /* Build configuration list for PBXProject "ClassWork" */;
+			buildConfigurationList = 80A37E0A27D27667002E28D9 /* Build configuration list for PBXProject "CardNameAndEmail" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,48 +122,51 @@
 				en,
 				Base,
 			);
-			mainGroup = E9B7FAA527C5547300AA35FE;
-			productRefGroup = E9B7FAAF27C5547300AA35FE /* Products */;
+			mainGroup = 80A37E0627D27667002E28D9;
+			productRefGroup = 80A37E1027D27667002E28D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E9B7FAAD27C5547300AA35FE /* ClassWork */,
+				80A37E0E27D27667002E28D9 /* CardNameAndEmail */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E9B7FAAC27C5547300AA35FE /* Resources */ = {
+		80A37E0D27D27667002E28D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9B7FABE27C5547500AA35FE /* LaunchScreen.storyboard in Resources */,
-				E9B7FABB27C5547500AA35FE /* Assets.xcassets in Resources */,
+				80A37E1F27D27667002E28D9 /* LaunchScreen.storyboard in Resources */,
+				80A37E1C27D27667002E28D9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E9B7FAAA27C5547300AA35FE /* Sources */ = {
+		80A37E0B27D27667002E28D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8061524127CFACAB00189914 /* EmailCardView.swift in Sources */,
-				E9B7FAB627C5547300AA35FE /* ViewController.swift in Sources */,
-				E9B7FAB227C5547300AA35FE /* AppDelegate.swift in Sources */,
-				E9B7FAB427C5547300AA35FE /* SceneDelegate.swift in Sources */,
-				8061524327CFACD400189914 /* NameCardViewController.swift in Sources */,
+				80A37E1727D27667002E28D9 /* ViewController.swift in Sources */,
+				80A37E1327D27667002E28D9 /* AppDelegate.swift in Sources */,
+				80A37E2727D276E5002E28D9 /* Validation.swift in Sources */,
+				80A37E2F27D2773F002E28D9 /* EmailCardView.swift in Sources */,
+				80A37E2B27D27720002E28D9 /* NameCardView.swift in Sources */,
+				80A37E2D27D2772C002E28D9 /* EmailCardViewController.swift in Sources */,
+				80A37E2927D2770D002E28D9 /* NameCardViewController.swift in Sources */,
+				80A37E1527D27667002E28D9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E9B7FABC27C5547500AA35FE /* LaunchScreen.storyboard */ = {
+		80A37E1D27D27667002E28D9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E9B7FABD27C5547500AA35FE /* Base */,
+				80A37E1E27D27667002E28D9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -162,7 +174,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E9B7FAC027C5547500AA35FE /* Debug */ = {
+		80A37E2127D27667002E28D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -223,7 +235,7 @@
 			};
 			name = Debug;
 		};
-		E9B7FAC127C5547500AA35FE /* Release */ = {
+		80A37E2227D27667002E28D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,7 +290,7 @@
 			};
 			name = Release;
 		};
-		E9B7FAC327C5547500AA35FE /* Debug */ = {
+		80A37E2427D27667002E28D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -287,7 +299,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 79X7DF9H2H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ClassWork/Info.plist;
+				INFOPLIST_FILE = CardNameAndEmail/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -297,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = blazhievsky.ClassWork;
+				PRODUCT_BUNDLE_IDENTIFIER = ArtemBlazhievsky.CardNameAndEmail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -305,7 +317,7 @@
 			};
 			name = Debug;
 		};
-		E9B7FAC427C5547500AA35FE /* Release */ = {
+		80A37E2527D27667002E28D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -314,7 +326,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 79X7DF9H2H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ClassWork/Info.plist;
+				INFOPLIST_FILE = CardNameAndEmail/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -324,7 +336,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = blazhievsky.ClassWork;
+				PRODUCT_BUNDLE_IDENTIFIER = ArtemBlazhievsky.CardNameAndEmail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -335,25 +347,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E9B7FAA927C5547300AA35FE /* Build configuration list for PBXProject "ClassWork" */ = {
+		80A37E0A27D27667002E28D9 /* Build configuration list for PBXProject "CardNameAndEmail" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E9B7FAC027C5547500AA35FE /* Debug */,
-				E9B7FAC127C5547500AA35FE /* Release */,
+				80A37E2127D27667002E28D9 /* Debug */,
+				80A37E2227D27667002E28D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9B7FAC227C5547500AA35FE /* Build configuration list for PBXNativeTarget "ClassWork" */ = {
+		80A37E2327D27667002E28D9 /* Build configuration list for PBXNativeTarget "CardNameAndEmail" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E9B7FAC327C5547500AA35FE /* Debug */,
-				E9B7FAC427C5547500AA35FE /* Release */,
+				80A37E2427D27667002E28D9 /* Debug */,
+				80A37E2527D27667002E28D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E9B7FAA627C5547300AA35FE /* Project object */;
+	rootObject = 80A37E0727D27667002E28D9 /* Project object */;
 }
