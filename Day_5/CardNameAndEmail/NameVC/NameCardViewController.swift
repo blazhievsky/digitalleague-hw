@@ -30,11 +30,14 @@ final class NameCardViewController: UIViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
         nameCardView.configureView()
-        nameCardView.offsetContentWillShowAndHideKeyboard()
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         self.view.subviews.first?.frame = self.view.frame
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }

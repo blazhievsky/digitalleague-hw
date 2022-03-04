@@ -41,7 +41,7 @@ class EmailCardView: UIView{
         button.backgroundColor = .systemBlue
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 4
-        //button.addTarget(self, action: #selector(emailDidTapValidateButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(emailDidTapValidateButton), for: .touchUpInside)
         return button
     }()
     
@@ -82,29 +82,30 @@ extension EmailCardView {
             emailValidationResultLabel.bottomAnchor.constraint(equalTo: emailCardView.bottomAnchor, constant: -16),
         ])
     }
+    
+    @objc
+    private func emailDidTapValidateButton() {
+        let regExString = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let predicate = NSPredicate(format: "SELF MATCHES[c] %@", regExString)
+        let isValid = predicate.evaluate(with: emailTextField.text)
+        
+        switch isValid {
+        case true:
+            emailValidationResultLabel.text = "Валидация прошла успешно"
+            emailValidationResultLabel.textColor = .systemGreen
+        case false:
+            emailValidationResultLabel.text = "В поле ошибка"
+            emailValidationResultLabel.textColor = .systemRed
+            
+            let animation = CABasicAnimation(keyPath: "position")
+            animation.duration = 0.07
+            animation.repeatCount = 4
+            animation.autoreverses = true
+            animation.fromValue = NSValue(cgPoint: CGPoint(x: emailCardView.center.x - 10, y: emailCardView.center.y))
+            animation.toValue = NSValue(cgPoint: CGPoint(x: emailCardView.center.x + 10, y: emailCardView.center.y))
+            emailCardView.layer.add(animation, forKey: "position")
+        }
+    }
 }
 
 
-extension EmailCardView {
-    
-    func offsetContentWillShowAndHideKeyboard() {
-        Foundation.NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        Foundation.NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)}
-    
-    
-    @objc
-    private func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.emailCardView.frame.minY >= keyboardSize.maxY {
-                self.frame.origin.y -= keyboardSize.height
-            }
-        }
-    }
-    
-    @objc
-    private func keyboardWillHide(notification: NSNotification) {
-        if self.frame.origin.y != 0 {
-            self.frame.origin.y = 0
-        }
-    }
-}

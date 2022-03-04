@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+
 class NameCardView: UIView  {
     
     private lazy var nameCardView: UIView = {
@@ -41,8 +42,7 @@ class NameCardView: UIView  {
         button.backgroundColor = .systemBlue
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 4
-        //        button.addTarget(self,
-        //                         action: #selector(nameDidTapValidateButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(nameDidTapValidateButton), for: .touchUpInside)
         return button
     }()
     
@@ -82,32 +82,31 @@ extension NameCardView {
             nameValidationResultLabel.trailingAnchor.constraint(equalTo: nameCardView.trailingAnchor, constant: -16),
             nameValidationResultLabel.bottomAnchor.constraint(equalTo: nameCardView.bottomAnchor, constant: -16),
         ])
+    }
+    
+    @objc
+    private func nameDidTapValidateButton() {
+        let regExString = "[A-Za-zА-ЯЁа-яё-]{2,}+\\s{1}+[A-Za-zА-ЯЁа-яё-]{2,}"
+        let predicate = NSPredicate(format: "SELF MATCHES[c] %@", regExString)
+        let isValid = predicate.evaluate(with: nameTextField.text)
         
-        
-        
+        switch isValid {
+        case true:
+            nameValidationResultLabel.text = "Валидация прошла успешно"
+            nameValidationResultLabel.textColor = .systemGreen
+        case false:
+            nameValidationResultLabel.text = "В поле ошибка"
+            nameValidationResultLabel.textColor = .systemRed
+            
+            let animation = CABasicAnimation(keyPath: "position")
+            animation.duration = 0.07
+            animation.repeatCount = 4
+            animation.autoreverses = true
+            animation.fromValue = NSValue(cgPoint: CGPoint(x: nameCardView.center.x - 10, y: nameCardView.center.y))
+            animation.toValue = NSValue(cgPoint: CGPoint(x: nameCardView.center.x + 10, y: nameCardView.center.y))
+            nameCardView.layer.add(animation, forKey: "position")
+        }
     }
 }
 
-extension NameCardView {
-    
-    func offsetContentWillShowAndHideKeyboard() {
-        Foundation.NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        Foundation.NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)}
-    
-    
-    @objc
-    private func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.nameCardView.frame.minY >= keyboardSize.maxY {
-                self.frame.origin.y -= keyboardSize.height
-            }
-        }
-    }
-    
-    @objc
-    private func keyboardWillHide(notification: NSNotification) {
-        if self.frame.origin.y != 0 {
-            self.frame.origin.y = 0
-        }
-    }
-}
+

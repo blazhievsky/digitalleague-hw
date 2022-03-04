@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     lazy var authorHomeWorkLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "ДЗ Блажиевского Артема"
+        label.text = "ДЗ Артема Блажиевского"
         label.font = .systemFont(ofSize: 20)
         return label
     }()

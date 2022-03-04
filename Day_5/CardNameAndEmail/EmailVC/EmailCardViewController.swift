@@ -24,13 +24,11 @@ final class EmailCardViewController: UIViewController {
     override func loadView() {
         super.loadView()
         self.view = emailCardView
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         emailCardView.configureView()
-        emailCardView.offsetContentWillShowAndHideKeyboard()
     }
     
     override func viewWillLayoutSubviews() {
@@ -38,4 +36,7 @@ final class EmailCardViewController: UIViewController {
         self.view.subviews.first?.frame = self.view.frame
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
