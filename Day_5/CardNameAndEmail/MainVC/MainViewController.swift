@@ -6,7 +6,7 @@
 //
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     
     lazy var authorHomeWorkLabel: UILabel = {
         let label = UILabel()
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     lazy var emailCardTransitionButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Перейти к валидации почты ←", for: .normal)
+        button.setTitle("Перейти к валидации почты →", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .bold)
         button.backgroundColor = .systemBlue
         button.tintColor = .white
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController {
+extension MainViewController {
     private func configureView() {
         view.backgroundColor = .systemBackground
         

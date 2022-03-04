@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		80A37E1327D27667002E28D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A37E1227D27667002E28D9 /* AppDelegate.swift */; };
 		80A37E1527D27667002E28D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A37E1427D27667002E28D9 /* SceneDelegate.swift */; };
-		80A37E1727D27667002E28D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A37E1627D27667002E28D9 /* ViewController.swift */; };
+		80A37E1727D27667002E28D9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A37E1627D27667002E28D9 /* MainViewController.swift */; };
 		80A37E1C27D27667002E28D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A37E1B27D27667002E28D9 /* Assets.xcassets */; };
 		80A37E1F27D27667002E28D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A37E1D27D27667002E28D9 /* LaunchScreen.storyboard */; };
 		80A37E2927D2770D002E28D9 /* NameCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A37E2827D2770D002E28D9 /* NameCardViewController.swift */; };
@@ -22,7 +22,7 @@
 		80A37E0F27D27667002E28D9 /* CardNameAndEmail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardNameAndEmail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A37E1227D27667002E28D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80A37E1427D27667002E28D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		80A37E1627D27667002E28D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80A37E1627D27667002E28D9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		80A37E1B27D27667002E28D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80A37E1E27D27667002E28D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80A37E2027D27667002E28D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,14 +62,11 @@
 		80A37E1127D27667002E28D9 /* CardNameAndEmail */ = {
 			isa = PBXGroup;
 			children = (
-				80A37E1227D27667002E28D9 /* AppDelegate.swift */,
-				80A37E1427D27667002E28D9 /* SceneDelegate.swift */,
-				80A37E1627D27667002E28D9 /* ViewController.swift */,
-				80A37E1B27D27667002E28D9 /* Assets.xcassets */,
-				80A37E1D27D27667002E28D9 /* LaunchScreen.storyboard */,
-				80A37E2027D27667002E28D9 /* Info.plist */,
+				80A37E3527D29223002E28D9 /* Application */,
+				80A37E3627D2925F002E28D9 /* MainVC */,
 				80A37E3227D27ABC002E28D9 /* NameVC */,
 				80A37E3327D27AD1002E28D9 /* EmailVC */,
+				80A37E3427D290AF002E28D9 /* Supporting files */,
 			);
 			path = CardNameAndEmail;
 			sourceTree = "<group>";
@@ -90,6 +87,33 @@
 				80A37E2E27D2773F002E28D9 /* EmailCardView.swift */,
 			);
 			path = EmailVC;
+			sourceTree = "<group>";
+		};
+		80A37E3427D290AF002E28D9 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				80A37E1B27D27667002E28D9 /* Assets.xcassets */,
+				80A37E2027D27667002E28D9 /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		80A37E3527D29223002E28D9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				80A37E1227D27667002E28D9 /* AppDelegate.swift */,
+				80A37E1427D27667002E28D9 /* SceneDelegate.swift */,
+				80A37E1D27D27667002E28D9 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		80A37E3627D2925F002E28D9 /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				80A37E1627D27667002E28D9 /* MainViewController.swift */,
+			);
+			path = MainVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80A37E1727D27667002E28D9 /* ViewController.swift in Sources */,
+				80A37E1727D27667002E28D9 /* MainViewController.swift in Sources */,
 				80A37E1327D27667002E28D9 /* AppDelegate.swift in Sources */,
 				80A37E2F27D2773F002E28D9 /* EmailCardView.swift in Sources */,
 				80A37E2B27D27720002E28D9 /* NameCardView.swift in Sources */,
@@ -311,7 +335,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 79X7DF9H2H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CardNameAndEmail/Info.plist;
+				INFOPLIST_FILE = "CardNameAndEmail/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -338,7 +362,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 79X7DF9H2H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CardNameAndEmail/Info.plist;
+				INFOPLIST_FILE = "CardNameAndEmail/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
