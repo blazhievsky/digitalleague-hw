@@ -13,9 +13,8 @@
 		80A37E1C27D27667002E28D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A37E1B27D27667002E28D9 /* Assets.xcassets */; };
 		80A37E1F27D27667002E28D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A37E1D27D27667002E28D9 /* LaunchScreen.storyboard */; };
 		80A37E2927D2770D002E28D9 /* NameCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A37E2827D2770D002E28D9 /* NameCardViewController.swift */; };
-		80A37E2B27D27720002E28D9 /* NameCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A37E2A27D27720002E28D9 /* NameCardView.swift */; };
+		80A37E2B27D27720002E28D9 /* cardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A37E2A27D27720002E28D9 /* cardsView.swift */; };
 		80A37E2D27D2772C002E28D9 /* EmailCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A37E2C27D2772C002E28D9 /* EmailCardViewController.swift */; };
-		80A37E2F27D2773F002E28D9 /* EmailCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A37E2E27D2773F002E28D9 /* EmailCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +26,8 @@
 		80A37E1E27D27667002E28D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80A37E2027D27667002E28D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80A37E2827D2770D002E28D9 /* NameCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCardViewController.swift; sourceTree = "<group>"; };
-		80A37E2A27D27720002E28D9 /* NameCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCardView.swift; sourceTree = "<group>"; };
+		80A37E2A27D27720002E28D9 /* cardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardsView.swift; sourceTree = "<group>"; };
 		80A37E2C27D2772C002E28D9 /* EmailCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCardViewController.swift; sourceTree = "<group>"; };
-		80A37E2E27D2773F002E28D9 /* EmailCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				80A37E2827D2770D002E28D9 /* NameCardViewController.swift */,
-				80A37E2A27D27720002E28D9 /* NameCardView.swift */,
 			);
 			path = NameVC;
 			sourceTree = "<group>";
@@ -84,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				80A37E2C27D2772C002E28D9 /* EmailCardViewController.swift */,
-				80A37E2E27D2773F002E28D9 /* EmailCardView.swift */,
 			);
 			path = EmailVC;
 			sourceTree = "<group>";
@@ -103,6 +99,7 @@
 			children = (
 				80A37E1227D27667002E28D9 /* AppDelegate.swift */,
 				80A37E1427D27667002E28D9 /* SceneDelegate.swift */,
+				80A37E2A27D27720002E28D9 /* cardsView.swift */,
 				80A37E1D27D27667002E28D9 /* LaunchScreen.storyboard */,
 			);
 			path = Application;
@@ -188,8 +185,7 @@
 			files = (
 				80A37E1727D27667002E28D9 /* MainViewController.swift in Sources */,
 				80A37E1327D27667002E28D9 /* AppDelegate.swift in Sources */,
-				80A37E2F27D2773F002E28D9 /* EmailCardView.swift in Sources */,
-				80A37E2B27D27720002E28D9 /* NameCardView.swift in Sources */,
+				80A37E2B27D27720002E28D9 /* cardsView.swift in Sources */,
 				80A37E2D27D2772C002E28D9 /* EmailCardViewController.swift in Sources */,
 				80A37E2927D2770D002E28D9 /* NameCardViewController.swift in Sources */,
 				80A37E1527D27667002E28D9 /* SceneDelegate.swift in Sources */,

@@ -5,3 +5,4 @@
 ## [День 2](https://github.com/blazhievsky/digitalleague-hw/tree/main/Day_2)
 ## [День 3](https://github.com/blazhievsky/digitalleague-hw/tree/main/Day_3)
 ## [День 5](https://github.com/blazhievsky/digitalleague-hw/tree/main/Day_5)
+## [День 6](https://github.com/blazhievsky/digitalleague-hw/tree/main/Day_6)

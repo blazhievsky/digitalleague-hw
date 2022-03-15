@@ -60,7 +60,6 @@ extension MainViewController {
             authorHomeWorkLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             authorHomeWorkLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             
-            
             nameCardTransitionButton.topAnchor.constraint(equalTo: authorHomeWorkLabel.bottomAnchor, constant: 20),
             nameCardTransitionButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             nameCardTransitionButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
@@ -75,13 +74,13 @@ extension MainViewController {
     
     @objc
     private func openNameCardVC() {
-        let nameCardVC = NameCardViewController(NameCardView())
+        let nameCardVC = NameCardViewController()
         navigationController?.present(nameCardVC, animated: true)
     }
     
     @objc
     private func openEmailCardVC() {
-        let emailCardVC = EmailCardViewController(EmailCardView())
+        let emailCardVC = EmailCardViewController()
         navigationController?.pushViewController(emailCardVC, animated: true)
     }
 }
