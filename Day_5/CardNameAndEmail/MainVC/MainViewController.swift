@@ -25,7 +25,6 @@ class MainViewController: UIViewController {
         button.tintColor = .white
         button.layer.cornerRadius = 30
         button.addTarget(self, action: #selector(openNameCardVC), for: .touchUpInside)
-        
         return button
     }()
     
@@ -38,7 +37,6 @@ class MainViewController: UIViewController {
         button.tintColor = .white
         button.layer.cornerRadius = 30
         button.addTarget(self, action: #selector(openEmailCardVC), for: .touchUpInside)
-        
         return button
     }()
     
@@ -47,7 +45,6 @@ class MainViewController: UIViewController {
         configureView()
     }
 }
-
 extension MainViewController {
     private func configureView() {
         view.backgroundColor = .systemBackground
@@ -59,7 +56,6 @@ extension MainViewController {
         NSLayoutConstraint.activate([
             authorHomeWorkLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             authorHomeWorkLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            
             
             nameCardTransitionButton.topAnchor.constraint(equalTo: authorHomeWorkLabel.bottomAnchor, constant: 20),
             nameCardTransitionButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
@@ -75,13 +71,13 @@ extension MainViewController {
     
     @objc
     private func openNameCardVC() {
-        let nameCardVC = NameCardViewController(NameCardView())
+        let nameCardVC = NameCardViewController()
         navigationController?.present(nameCardVC, animated: true)
     }
     
     @objc
     private func openEmailCardVC() {
-        let emailCardVC = EmailCardViewController(EmailCardView())
+        let emailCardVC = EmailCardViewController()
         navigationController?.pushViewController(emailCardVC, animated: true)
     }
 }
